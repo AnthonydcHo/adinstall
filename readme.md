@@ -23,7 +23,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p align="center">
-Create a Resource Group as Active Directory Lab > Create the Domain Controller VM (Windows Server 2022) named “DC-1”. Username: labuser, password: Cyberlab123! 
+Create a Resource Group as Active Directory Lab > Create the Domain Controller VM (Windows Server 2022) named “DC-1” > Username: labuser, password: Cyberlab123! 
+<p align="center">    
 <img width="933" alt="Screenshot 2025-02-25 at 4 05 42 PM" src="https://github.com/user-attachments/assets/7324eeef-6ea5-4ebb-af6b-7c918c09f988" />
 <br />
 
