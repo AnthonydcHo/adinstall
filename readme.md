@@ -55,7 +55,7 @@ Navigate into Client 1 network settings > Click on Client 1 virtual network inte
  
 
 
-Click start and search for Window Powershell > Type ping 10.0.0.4, attempt to ping DC-1’s private IP address > With 4 replies from the image, this indicates an successful ping: 
+Click start and search for Window Powershell > Type ping 10.0.0.4, attempt to ping DC-1’s private IP address > With 4 replies, this indicates an successful ping: 
 <p align="center">
 <img width="925" alt="Screenshot 2025-02-25 at 4 10 27 PM" src="https://github.com/user-attachments/assets/66ff0b05-162a-4ad8-a925-e6d73eba4f4d" />
 <p align="center">
