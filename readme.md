@@ -40,7 +40,7 @@ Go into dc-1 VM azure network setting > Go into dc-1 virtual network interface c
 <p align="center"> 
 <img width="293" alt="Screenshot 2025-02-25 at 4 09 35 PM" src="https://github.com/user-attachments/assets/1713a834-dbd4-4381-b65c-9b53eb89bcd7" />
 
-Navigate into Client 1 network settings > Click on Client 1 virtual network interface card > Click on DNS Servers and click on custom >Type or paste 10.0.0.4 (dc-1 private ip address): 
+Navigate into Client 1 network settings > Click on Client 1 virtual network interface card > Click on DNS Servers and click on custom > Type or paste 10.0.0.4 (dc-1 private ip address): 
 <p align="center"> 
 <img width="885" alt="x" src="https://github.com/user-attachments/assets/2d09fd61-97b3-43aa-a7da-6a8d252a4d40" />
 
@@ -98,5 +98,4 @@ Uncheck DNS Delegation > Continue with Install > We have succesfully downloaded 
 
 
 
-We've successfully succesfully installed Active Directory, we will continue on deployment of Active Directory!
-:  <br/>
+We've successfully succesfully installed Active Directory, we will continue on deployment of Active Directory! :  <br/>
