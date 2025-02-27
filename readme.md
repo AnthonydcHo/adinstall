@@ -8,6 +8,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img height ="80% ="<img width="40%" alt="Screenshot 2025-02-25 at 4 05 26 PM" src="https://github.com/user-attachments/assets/effe8a9b-6c87-4011-9da1-e041a08a700b" /> <br/>
 
 
+
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -25,26 +26,29 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p align="center">
 Create a Resource Group as Active Directory Lab > Create the Domain Controller VM (Windows Server 2022) named “DC-1” > Username: labuser, password: Cyberlab123! 
 <p align="center">    
-<img width="933" alt="Screenshot 2025-02-25 at 4 05 42 PM" src="https://github.com/user-attachments/assets/7324eeef-6ea5-4ebb-af6b-7c918c09f988" />
+<img src="https://i.imgur.com/ddzNbgx.png" height="80%" width="80%" 
 <br />
+
 
 
 - Create a Virtual Network and Subnet as Active Directory V-net: 
     - We can use East US 2 as our time zone. 
 
-<br />
 
+<br />
 Go into dc-1 VM azure network setting > Go into dc-1 virtual network interface card > Click on ipconfig1 > Below Public IP address setting change allocation from dynamic to static > save:
 <p align="center"> 
-<img width="352" alt="3" src="https://github.com/user-attachments/assets/bed997e0-6ecc-44d6-b753-cb82329997fa" />
+<img src="https://i.imgur.com/QRPMgGZ.png" height="80%" width="80%" 
 <br />
 <p align="center"> 
-<img width="293" alt="Screenshot 2025-02-25 at 4 09 35 PM" src="https://github.com/user-attachments/assets/1713a834-dbd4-4381-b65c-9b53eb89bcd7" />
+<img src="https://i.imgur.com/z8vDm5B.png" height="80%" width="80%" 
+<br />
+<br />
 
 Navigate into Client 1 network settings > Click on Client 1 virtual network interface card > Click on DNS Servers and click on custom > Type or paste 10.0.0.4 (dc-1 private ip address): 
 <p align="center"> 
-<img width="885" alt="x" src="https://github.com/user-attachments/assets/2d09fd61-97b3-43aa-a7da-6a8d252a4d40" />
-
+<img src="https://i.imgur.com/HPtHpsU.png" height="80%" width="80%" 
+<br />
 
 
 
@@ -55,6 +59,7 @@ Navigate into Client 1 network settings > Click on Client 1 virtual network inte
        - Log into using client 1 username and password made
  
 
+<br />
 
 Click start and search for Window Powershell > Type ping 10.0.0.4, attempt to ping DC-1’s private IP address > With 4 replies, this indicates an successful ping: 
 <p align="center">
