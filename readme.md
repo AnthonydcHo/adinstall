@@ -35,7 +35,7 @@ Create a Resource Group as Active Directory Lab > Create the Domain Controller V
     - We can use East US 2 as our time zone. 
 
 
-<br />
+
 Go into dc-1 VM azure network setting > Go into dc-1 virtual network interface card > Click on ipconfig1 > Below Public IP address setting change allocation from dynamic to static > save:
 <p align="center"> 
 <img src="https://i.imgur.com/QRPMgGZ.png" height="80%" width="80%" 
@@ -63,45 +63,56 @@ Navigate into Client 1 network settings > Click on Client 1 virtual network inte
 
 Click start and search for Window Powershell > Type ping 10.0.0.4, attempt to ping DC-1’s private IP address > With 4 replies, this indicates an successful ping: 
 <p align="center">
-<img width="925" alt="Screenshot 2025-02-25 at 4 10 27 PM" src="https://github.com/user-attachments/assets/66ff0b05-162a-4ad8-a925-e6d73eba4f4d" />
+<img src="https://i.imgur.com/IsVJetO.png" height="80%" width="80%" 
 <p align="center">
 
-Continue to type ipconfig /all. The output for the DNS settings should show DC-1’s private IP Address: 
-<p align="center"> 
-<img width="443" alt="Screenshot 2025-02-25 at 4 10 44 PM" src="https://github.com/user-attachments/assets/360c6810-228a-455d-bd64-1d4f6b6c2480" />
-<img width="930" alt="Screenshot 2025-02-25 at 4 14 19 PM" src="https://github.com/user-attachments/assets/88aa303f-317f-4be6-b940-57b70bbd492a" />
-
-Login to DC-1 VM and install Active Directory Domain Services > Click start and go into server manager: 
-<p align="center"> 
-<img width="377" alt="Screenshot 2025-02-25 at 4 12 43 PM" src="https://github.com/user-attachments/assets/b33ad494-aa13-4e09-9e7e-040e2a194a5f" />
-  
-When server manager runs, click on add roles and features > Continue to click next > In server roles > check Active Domain Services > Finish install: 
+Continue to type ipconfig /all. Output for the DNS settings should show DC-1’s private IP Address: 
 <p align="center">
-<img width="547" alt="Screenshot 2025-02-25 at 4 13 43 PM" src="https://github.com/user-attachments/assets/6b13ca1e-1bf5-4ccf-9b9b-c52002917d53" />
+<img src="https://i.imgur.com/ipztBhi.png" height="80%" width="80%"     
+<p align="center">
+<img src="https://i.imgur.com/we4VdUA.png" height="80%" width="80%" 
+<p align="center">
+
+Login to DC-1 VM > install Active Directory Domain Services > Click start > server manager: 
+<p align="center"> 
+<img src="https://i.imgur.com/dJaVobe.png" height="80%" width="80%" 
+<p align="center">
+<br /> 
+    
+When server manager runs > add roles and features > Continue to click next > server roles > check Active Domain Services > Finish install: 
+
+<p align="center">
+<img src="https://i.imgur.com/uNcYn8l.png height="80%" width="80%"
+<p align="center">
+
 
 Setup a new forest as mydomain.com (can be anything, just remember what it is) > log into DC-1 VM >
 server manager > click promote server to domain controller:
 <p align="center"> 
-<img width="927" alt="Screenshot 2025-02-25 at 4 16 25 PM" src="https://github.com/user-attachments/assets/15bcc435-c7dd-4626-8cec-6f5d3bfa05e2" />
-
+<img src="https://i.imgur.com/EHl9qzq.png" height="80%" width="80%" 
+<br /> 
 
 Click add a new host and type in mydomain name into Root domain name
 <p align="center"> 
-<img width="535" alt="Screenshot 2025-02-25 at 4 16 41 PM" src="https://github.com/user-attachments/assets/f91fdbe5-7881-46db-aa6b-2a50206832f5" />
+<img src="https://i.imgur.com/em1Syi1.png" height="80%" width="80%" 
+<p align="center"> 
+
 
 Continue to click next, in domain controller options and directory services restore mode password, we are very likely never going to use this. (You may set up your own password)
 <p align="center"> 
-<img width="541" alt="Screenshot 2025-02-25 at 4 17 15 PM" src="https://github.com/user-attachments/assets/7402ba1e-537a-40a0-a421-503bccfe3f52" />
+<img src="https://i.imgur.com/Ov1xImS.png" height="80%" width="80%" 
+<p align="center"> 
 
 Uncheck DNS Delegation > Continue with Install > We have succesfully downloaded Active Directory!
 <p align="center"> 
-<img width="309" alt="Screenshot 2025-02-25 at 5 07 11 PM" src="https://github.com/user-attachments/assets/c2368ddf-6f6b-417a-9861-bdf9d66fe14b" />
-<p align="center"> 
-<img width="476" alt="Screenshot 2025-02-25 at 5 09 21 PM" src="https://github.com/user-attachments/assets/582c18c8-00d7-4116-9cd0-1619f9d155a2" />
- <br/>
+<img src="https://i.imgur.com/Lfm72Gn.png" height="80%" width="80%" 
+<br /> 
+<p align="center">     
+<img src="https://i.imgur.com/GdHA9v3.png" height="80%" width="80%" 
+<p align="center">     
 
 
 
 
 
-We've successfully succesfully installed Active Directory, we will continue on deployment of Active Directory! :  <br/>
+We've successfully succesfully installed Active Directory, we will continue on <a href="https://github.com/AnthonydcHo/addeployment"> deployment of Active Directory!   <br/>
