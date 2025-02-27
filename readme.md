@@ -2,10 +2,12 @@
 </p>
 
 <h1> Active Directory: Installation & Infrastructure </h1>
-This tutorial outlines the implementation of on-premises Active Directory within two Azure virtual machines. <br/>
-<br/>
-<p align="center">
-<img height ="80% ="<img width="40%" alt="Screenshot 2025-02-25 at 4 05 26 PM" src="https://github.com/user-attachments/assets/effe8a9b-6c87-4011-9da1-e041a08a700b" /> <br/>
+This tutorial outlines the implementation of on-premises Active Directory within two Azure virtual machines. 
+
+<p align="center">    
+<img src="https://i.imgur.com/oL043lv.png" height="80%" width="80%" 
+<p align="center">    
+
 
 
 
